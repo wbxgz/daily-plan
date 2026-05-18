@@ -1,0 +1,153 @@
+.toast {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-text);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  z-index: 200;
+  white-space: nowrap;
+}
+
+.settings-section {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.settings-section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.settings-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.cat-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.cat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.cat-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cat-name {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.cat-default {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.cat-del {
+  font-size: 0.8rem;
+  color: #ef4444;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cat-del:active {
+  background: #fef2f2;
+}
+
+.add-cat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cat-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.cat-input:focus {
+  border-color: var(--color-primary);
+}
+
+.color-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-opt {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.color-opt.selected {
+  border-color: var(--color-text);
+  transform: scale(1.2);
+}
+
+.color-opt:active {
+  transform: scale(1.1);
+}
+
+.btn-add {
+  padding: 8px 16px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.btn-add:active {
+  opacity: 0.85;
+}
+
+.backup-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn-backup {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  text-align: center;
+  transition: background 0.15s;
+}
+
+.btn-backup:active {
+  background: var(--color-bg);
+}
